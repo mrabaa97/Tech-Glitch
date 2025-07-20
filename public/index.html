@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Glitch</title>
+    <!-- link to fontawesome for inserting social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link to css file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">TechGlitch</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Tech Driven. Glitch Proof</h1>
+            <p>From frontend flow to backend power — built glitch-proof.</p>
+            <p class="highlight">Bringing ideas to life with modern tech and thoughtful code</p>
+            <a href="#contactt" class="cta-button">Let's Connect</a>
+        </div>
+        <div class="hero-image">
+            <img src="profile.png" alt="Profile" class="profile-img">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>React, Vue, HTML5, CSS3, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Node.js, Python, MongoDB, PostgreSQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Adobe XD, Prototyping User Testing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>Highlighted Projects</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Portfolio Website</h3>
+            <p>Responsive site built with HTML, CSS, and JavaScript showcasing personal projects and skills.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>Task Manager App</h3>
+            <p>Full-stack app using Node.js, Express, and MongoDB for managing tasks with authentication.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Cyber Security Tool</h3>
+            <p>Python-based script for scanning and securing network vulnerabilities in real-time.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer id="contact" class="contact">
+        <p>&copy; 2025 TechGlitch. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/mrabaa97" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:mr.rabaa97@gmail.com"><i class="fa-solid fa-at"></i></a>
+            <a href="https://instagram.com/m.rabaa97" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mrabaa97" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+        </div>
+    </footer>
+
+<!-- Contact Modal -->
+<div id="contact-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Contact Me</h2>
+    <form id="contact-form" method="POST">
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone (optional)</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="cta-button">Send</button>
+    </form>
+  </div>
+</div>
+
+
+    <!-- link to javascript file -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
